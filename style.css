@@ -177,74 +177,70 @@ footer {
 }
 
 /* =========================
-   RESPONSIVE + MENU BURGER
+   BURGER MENU - MOBILE
 ========================= */
+.burger {
+  display: none;
+  font-size: 26px;
+  color: #38e09f;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #cfeee2;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.navigation a:hover {
+  color: #38e09f;
+}
+
+/* Mobile specific */
 @media (max-width: 900px) {
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
   .burger {
     display: block;
   }
 
-  .nav {
+  .navigation {
     display: none;
     width: 100%;
-    flex-direction: column;
-    gap: 8px;
-    background: linear-gradient(180deg, #050b08, #0b1a14);
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
   }
 
-  .nav.show {
+  .navigation.show {
     display: flex;
   }
 
-  .nav a {
-    padding: 12px;
-    font-size: 15px;
+  .navigation a {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
   }
 
-  .hero {
-    padding: 60px 20px 40px;
-  }
-
-  .hero h1,
-  .hero h2 {
-    font-size: 26px;
-  }
-
-  .hero p {
-    font-size: 15px;
-  }
-
-  .section {
-    padding: 25px 20px;
-    margin: 40px 15px;
-  }
-
-  .cta-support {
-    padding: 40px 15px;
-  }
-
-  .cta-support-box {
-    padding: 25px 20px;
-    text-align: center;
-  }
-
-  .cta-btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  footer {
-    font-size: 13px;
-    padding: 20px;
+  .navigation a:hover {
+    background-color: rgba(56, 224, 159, 0.2);
   }
 }
+
 
