@@ -1,3 +1,6 @@
+/* =========================
+   RESET & BASE
+========================= */
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +11,12 @@
 body {
   background: radial-gradient(circle at top, #0c1a14, #000);
   color: #e6f5ef;
+  line-height: 1.6;
 }
 
-/* HEADER */
+/* =========================
+   HEADER / MENU
+========================= */
 header {
   position: sticky;
   top: 0;
@@ -22,55 +28,68 @@ header {
 .navbar {
   max-width: 1200px;
   margin: auto;
-  padding: 20px;
+  padding: 18px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   color: #38e09f;
 }
 
+.nav {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
 .nav a {
-  margin-left: 18px;
   color: #cfeee2;
   text-decoration: none;
   padding: 8px 14px;
   border-radius: 6px;
-  transition: 0.2s;
+  transition: all 0.2s ease;
+  font-size: 14px;
 }
 
 .nav a:hover,
 .nav a.active {
-  color: #38e09f;
   background: rgba(56, 224, 159, 0.15);
+  color: #38e09f;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 .hero {
-  padding: 90px 20px;
+  padding: 80px 20px 60px;
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 38px;
-  margin-bottom: 12px;
+.hero h1,
+.hero h2 {
+  font-size: 34px;
+  margin-bottom: 14px;
 }
 
 .hero p {
   color: #b8e6d7;
+  max-width: 700px;
+  margin: auto;
 }
 
-/* SECTIONS */
+/* =========================
+   SECTIONS
+========================= */
 .section {
   max-width: 1100px;
   margin: 60px auto;
   padding: 40px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(56, 224, 159, 0.2);
 }
 
@@ -81,13 +100,16 @@ header {
 
 .section ul {
   margin-top: 12px;
+  margin-left: 18px;
 }
 
 .section li {
   margin-bottom: 10px;
 }
 
-/* CTA SUPPORT */
+/* =========================
+   CTA SUPPORT (GLOBAL)
+========================= */
 .cta-support {
   padding: 70px 20px;
 }
@@ -98,16 +120,21 @@ header {
   padding: 40px;
   border-radius: 18px;
   border: 1px solid rgba(56, 224, 159, 0.4);
-  background: radial-gradient(circle at top, rgba(56, 224, 159, 0.12), rgba(0, 0, 0, 0.85));
+  background: radial-gradient(
+    circle at top,
+    rgba(56, 224, 159, 0.12),
+    rgba(0, 0, 0, 0.85)
+  );
+  text-align: left;
 }
 
 .cta-support-box h2 {
   color: #38e09f;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .cta-support-box p {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .cta-btn {
@@ -118,16 +145,94 @@ header {
   font-weight: bold;
   border-radius: 10px;
   text-decoration: none;
+  transition: 0.2s ease;
 }
 
 .cta-btn:hover {
   box-shadow: 0 0 25px rgba(56, 224, 159, 0.7);
+  transform: translateY(-2px);
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 footer {
   text-align: center;
   padding: 30px;
   color: #8bcfb8;
   font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media (max-width: 900px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .nav a {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+
+  .hero {
+    padding: 60px 20px 40px;
+  }
+
+  .hero h1,
+  .hero h2 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .section {
+    padding: 25px 20px;
+    margin: 40px 15px;
+  }
+
+  .section h2 {
+    font-size: 22px;
+  }
+
+  .section p,
+  .section li {
+    font-size: 15px;
+  }
+
+  .cta-support {
+    padding: 40px 15px;
+  }
+
+  .cta-support-box {
+    padding: 25px 20px;
+    text-align: center;
+  }
+
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 20px;
+  }
 }
