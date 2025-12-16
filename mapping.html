@@ -1,72 +1,28 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Mapping DayZ – MIROX PROJECT</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* ===== MENU TOP ===== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(180deg, #0b0f0d 0%, #0f1a16 100%);
+  border-bottom: 1px solid rgba(0, 255, 170, 0.15);
+}
 
-<header class="header">
-  <div class="container header-bar">
-    <div class="brand">
-      <h1 class="logo">MIROX PROJECT</h1>
-      <p class="subtitle">Service Premium DayZ & Discord</p>
-    </div>
-    <nav class="nav">
-      <a href="index.html">Accueil</a>
-      <a href="services.html">Services</a>
-      <a href="mapping.html" class="active">Mapping</a>
-      <a href="codage.html">Codage</a>
-      <a href="discord.html">Discord</a>
-      <a href="support.html">Support</a>
-    </nav>
-  </div>
-</header>
+.nav a {
+  color: #cfd6d2;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
 
-<main class="container">
+.nav a:hover {
+  color: #00ffae;
+  background: rgba(0, 255, 174, 0.08);
+}
 
-  <section class="card">
-    <h2>Bienvenue sur MIROX PROJECT</h2>
-    <p>
-      MIROX PROJECT accompagne les fondateurs et administrateurs DayZ
-      dans la création de serveurs crédibles, immersifs et conçus pour durer.
-    </p>
-    <p>
-      Chaque projet est traité comme un service premium,
-      avec une vraie méthodologie, une vision long terme et un suivi réel.
-    </p>
-  </section>
-
-  <section class="card">
-    <h2>Mapping DayZ sur mesure</h2>
-    <ul>
-      <li>✔ Création de zones uniques PvP / PvE</li>
-      <li>✔ Villes custom, bases, bunkers, camps militaires</li>
-      <li>✔ Points d’intérêt scénarisés et immersifs</li>
-      <li>✔ Refonte complète de maps existantes</li>
-      <li>✔ Optimisation FPS & performances serveur</li>
-    </ul>
-  </section>
-
-  <section class="card highlight">
-    <h2>Pourquoi choisir MIROX PROJECT ?</h2>
-    <p>
-      Le mapping n’est pas juste esthétique :  
-      il influence l’équilibrage, la performance et l’expérience joueur.
-    </p>
-    <p>
-      Chez MIROX PROJECT, chaque placement est réfléchi,
-      testé et optimisé pour garantir stabilité et immersion.
-    </p>
-  </section>
-
-</main>
-
-<footer class="footer">
-  © 2025 – MIROX PROJECT · Tous droits réservés
-</footer>
-
-</body>
-</html>
+.nav a.active {
+  color: #00ffae;
+  background: rgba(0, 255, 174, 0.18);
+  box-shadow: 0 0 0 1px rgba(0, 255, 174, 0.4);
+}
