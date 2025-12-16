@@ -33,9 +33,9 @@
       <a href="erreurs.html">Erreurs</a>
       <a href="support.html">Support</a>
     </nav>
-
   </div>
 </header>
+
 
 
 
@@ -69,9 +69,16 @@
   const nav = document.getElementById("nav");
 
   burger.addEventListener("click", () => {
-    nav.classList.toggle("show");
+    nav.classList.toggle("active");
+  });
+
+  document.querySelectorAll(".nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("active");
+    });
   });
 </script>
+
 
 </body>
 </html>
