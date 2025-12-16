@@ -2,176 +2,43 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Erreurs courantes DayZ – MIROX PROJECT</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Erreurs courantes DayZ : crashs serveur, logs RPT, conflits de mods, problèmes missions et performances. Mini documentation admin.">
+  <title>Erreurs DayZ – MIROX PROJECT</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- ================= HEADER ================= -->
-<header class="header">
-  <div class="container header-bar">
-    <div class="brand">
-      <h1 class="logo">MIROX PROJECT</h1>
-      <p class="subtitle">Erreurs courantes DayZ · Mini-doc admin</p>
-    </div>
-
+<header>
+  <div class="navbar">
+    <div class="logo">MIROX PROJECT</div>
     <nav class="nav">
       <a href="index.html">Accueil</a>
       <a href="services.html">Services</a>
       <a href="mapping.html">Mapping</a>
       <a href="codage.html">Codage</a>
       <a href="discord.html">Discord</a>
-      <a href="erreurs.html" class="active">Erreurs DayZ</a>
+      <a href="erreurs.html" class="active">Erreurs</a>
       <a href="support.html">Support</a>
     </nav>
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
+<section class="section">
   <h2>Erreurs courantes DayZ</h2>
   <p>
-    Cette page regroupe les problèmes les plus fréquents
-    rencontrés par les administrateurs DayZ.
-    <br>À consulter avant d’ouvrir un ticket.
+    Dépannage des crashs serveur, conflits de mods,
+    erreurs RTP, logs et stabilité globale.
   </p>
 </section>
 
-<!-- ================= CONTENT ================= -->
-<main class="container">
+<section class="cta-support">
+  <div class="cta-support-box">
+    <h2>Un problème serveur ?</h2>
+    <p>Nous analysons et corrigeons rapidement.</p>
+    <a href="support.html" class="cta-btn">Ouvrir un ticket</a>
+  </div>
+</section>
 
-  <!-- CARD 1 -->
-  <section class="section card">
-    <h3>À quoi sert cette documentation ?</h3>
-    <p>
-      Cette page est destinée aux administrateurs
-      ayant déjà une base technique DayZ.
-      Elle permet d’identifier rapidement
-      les erreurs classiques avant de solliciter le support.
-    </p>
-    <ul>
-      <li>✔ Gagner du temps</li>
-      <li>✔ Éviter les tickets inutiles</li>
-      <li>✔ Comprendre l’origine des problèmes</li>
-    </ul>
-  </section>
-
-  <!-- CARD 2 -->
-  <section class="section card">
-    <h3>📄 Erreurs RPT (logs serveur)</h3>
-    <p>
-      Les fichiers RPT sont la première source
-      d’information en cas de crash ou bug.
-    </p>
-    <ul>
-      <li><strong>Script Error</strong> → erreur de script ou mod</li>
-      <li><strong>Undefined variable</strong> → variable mal déclarée</li>
-      <li><strong>File not found</strong> → fichier manquant ou chemin incorrect</li>
-      <li><strong>Duplicate class</strong> → conflit entre mods</li>
-    </ul>
-    <p>
-      ⚠️ Ignorer les erreurs RPT entraîne
-      presque toujours des instabilités serveur.
-    </p>
-  </section>
-
-  <!-- CARD 3 -->
-  <section class="section card">
-    <h3>🧩 Conflits de mods</h3>
-    <p>
-      Les conflits de mods sont l’une des causes
-      principales de crashs serveur.
-    </p>
-    <ul>
-      <li>Ordre de chargement incorrect</li>
-      <li>Mods incompatibles</li>
-      <li>Versions client / serveur différentes</li>
-      <li>Mods obsolètes ou abandonnés</li>
-    </ul>
-    <p>
-      Bonne pratique :
-      tester les mods un par un
-      et lire attentivement la documentation Workshop.
-    </p>
-  </section>
-
-  <!-- CARD 4 -->
-  <section class="section card">
-    <h3>📁 Problèmes de mission DayZ</h3>
-    <p>
-      Une mission mal configurée
-      peut empêcher le serveur de démarrer.
-    </p>
-    <ul>
-      <li>Fichier <code>init.c</code> mal modifié</li>
-      <li>Erreurs XML (<code>types.xml</code>, events)</li>
-      <li>Dossiers mal nommés</li>
-      <li>Chemins incorrects</li>
-    </ul>
-    <p>
-      Vérifier systématiquement :
-      syntaxe XML, permissions serveur
-      et cohérence des dossiers.
-    </p>
-  </section>
-
-  <!-- CARD 5 -->
-  <section class="section card">
-    <h3>⚙️ Performances & crashs serveur</h3>
-    <p>
-      Un serveur qui lag ou crash
-      n’est pas toujours lié à l’hébergement.
-    </p>
-    <ul>
-      <li>Trop d’objets mal placés (mapping)</li>
-      <li>Scripts lourds ou mal optimisés</li>
-      <li>Mods inutiles</li>
-      <li>Logs saturés</li>
-    </ul>
-    <p>
-      Règle simple :
-      mieux vaut supprimer que surcharger.
-    </p>
-  </section>
-
-  <!-- CARD 6 -->
-  <section class="section card">
-    <h3>🧠 Diagnostic rapide recommandé</h3>
-    <ol>
-      <li>Lire les logs RPT récents</li>
-      <li>Désactiver les derniers mods ajoutés</li>
-      <li>Tester en environnement propre</li>
-      <li>Vérifier la mission</li>
-    </ol>
-  </section>
-
-  <!-- CALL -->
-  <section class="section call">
-    <h3>Avant d’ouvrir un ticket</h3>
-    <p>
-      Pour un support efficace,
-      merci de préparer :
-    </p>
-    <ul>
-      <li>✔ Logs RPT récents</li>
-      <li>✔ Liste complète des mods</li>
-      <li>✔ Description claire du problème</li>
-      <li>✔ Actions déjà testées</li>
-    </ul>
-    <a class="cta discord-btn" href="discord.html">
-      Accéder à Discord & ouvrir un ticket
-    </a>
-  </section>
-
-</main>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  © 2025 – MIROX PROJECT · Documentation DayZ
-</footer>
+<footer>© 2025 – MIROX PROJECT</footer>
 
 </body>
 </html>
