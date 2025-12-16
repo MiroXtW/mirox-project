@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erreurs courantes DayZ – MIROX PROJECT</title>
+  <meta name="description" content="Erreurs courantes DayZ : crashs serveur, erreurs RPT, conflits de mods, problèmes missions et configurations. Mini-doc admin.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container header-bar">
+    <div class="brand">
+      <h1 class="logo">MIROX PROJECT</h1>
+      <p class="subtitle">Erreurs courantes DayZ · Mini-doc admin</p>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="mapping.html">Mapping</a>
+      <a href="codage.html">Codage</a>
+      <a href="discord.html">Discord</a>
+      <a href="erreurs.html" class="active">Erreurs DayZ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <h2>Erreurs courantes DayZ</h2>
+  <p>
+    Cette page regroupe les problèmes les plus fréquents rencontrés
+    par les administrateurs DayZ, avec des pistes de diagnostic.
+    <br>Avant d’ouvrir un ticket, prenez le temps de vérifier ces points.
+  </p>
+</section>
+
+<!-- ================= CONTENT ================= -->
+<main class="container">
+
+  <!-- INTRO -->
+  <section class="section">
+    <h3>À qui s’adresse cette page ?</h3>
+    <p>
+      Cette documentation s’adresse aux administrateurs DayZ
+      ayant déjà une base technique (missions, mods, logs).
+      Elle ne remplace pas un audit complet,
+      mais permet d’identifier rapidement les erreurs classiques.
+    </p>
+  </section>
+
+  <!-- RPT -->
+  <section class="section">
+    <h3>📄 Erreurs RPT (logs serveur)</h3>
+    <p>
+      Le fichier RPT est la première source d’information en cas de problème.
+      Il indique les erreurs critiques, warnings et conflits.
+    </p>
+
+    <ul>
+      <li><strong>Script Error</strong> : erreur de script (mod, mission, custom)</li>
+      <li><strong>Undefined variable</strong> : variable manquante ou mal déclarée</li>
+      <li><strong>File not found</strong> : chemin incorrect ou fichier absent</li>
+      <li><strong>Duplicate class</strong> : conflit entre deux mods</li>
+    </ul>
+
+    <p>
+      ⚠️ Ignorer les erreurs RPT conduit souvent à des crashs serveur
+      ou des comportements instables.
+    </p>
+  </section>
+
+  <!-- MODS -->
+  <section class="section">
+    <h3>🧩 Conflits de mods</h3>
+    <p>
+      Les conflits de mods sont responsables d’une grande partie
+      des crashs serveur et bugs invisibles.
+    </p>
+
+    <ul>
+      <li>Ordre de chargement incorrect</li>
+      <li>Mods incompatibles entre eux</li>
+      <li>Versions serveur / client différentes</li>
+      <li>Mods obsolètes ou abandonnés</li>
+    </ul>
+
+    <p>
+      Bonnes pratiques :
+      <ul>
+        <li>Tester les mods un par un</li>
+        <li>Lire les pages Workshop</li>
+        <li>Éviter les doublons de fonctionnalités</li>
+      </ul>
+    </p>
+  </section>
+
+  <!-- MISSIONS -->
+  <section class="section">
+    <h3>📁 Problèmes de mission</h3>
+    <p>
+      Une mission mal configurée peut empêcher le serveur de démarrer.
+    </p>
+
+    <ul>
+      <li>Fichier <code>init.c</code> mal modifié</li>
+      <li>Erreur dans l’économie (types.xml)</li>
+      <li>Balises XML incorrectes</li>
+      <li>Dossiers mal nommés</li>
+    </ul>
+
+    <p>
+      Toujours vérifier :
+      <ul>
+        <li>La syntaxe XML</li>
+        <li>Les chemins des fichiers</li>
+        <li>Les permissions serveur</li>
+      </ul>
+    </p>
+  </section>
+
+  <!-- PERFORMANCES -->
+  <section class="section">
+    <h3>⚙️ Performances & crashs serveur</h3>
+    <p>
+      Un serveur qui lag ou crash régulièrement
+      n’est pas toujours lié à l’hébergement.
+    </p>
+
+    <ul>
+      <li>Trop d’objets mal placés (mapping)</li>
+      <li>Scripts lourds ou mal optimisés</li>
+      <li>Mods inutiles</li>
+      <li>Logs saturés</li>
+    </ul>
+
+    <p>
+      Optimiser, c’est souvent <strong>supprimer</strong> plutôt qu’ajouter.
+    </p>
+  </section>
+
+  <!-- AVANT TICKET -->
+  <section class="section call">
+    <h3>Avant d’ouvrir un ticket</h3>
+    <p>
+      Pour un support efficace, merci de préparer :
+    </p>
+
+    <ul>
+      <li>✔ Les logs RPT récents</li>
+      <li>✔ La liste complète des mods</li>
+      <li>✔ Une description claire du problème</li>
+      <li>✔ Les actions déjà testées</li>
+    </ul>
+
+    <p>
+      Cela permet un diagnostic rapide et précis.
+    </p>
+
+    <a class="cta discord-btn" href="discord.html">
+      <i class="fa-brands fa-discord"></i> Accéder au support via Discord
+    </a>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  © 2025 – MIROX PROJECT · Documentation DayZ
+</footer>
+
+</body>
+</html>
