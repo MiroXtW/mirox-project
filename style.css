@@ -40,6 +40,9 @@ header {
   color: #38e09f;
 }
 
+/* =========================
+   NAVIGATION DESKTOP
+========================= */
 .nav {
   display: flex;
   gap: 14px;
@@ -59,6 +62,17 @@ header {
 .nav a.active {
   background: rgba(56, 224, 159, 0.15);
   color: #38e09f;
+}
+
+/* =========================
+   BURGER BUTTON
+========================= */
+.burger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #38e09f;
+  user-select: none;
 }
 
 /* =========================
@@ -125,7 +139,6 @@ header {
     rgba(56, 224, 159, 0.12),
     rgba(0, 0, 0, 0.85)
   );
-  text-align: left;
 }
 
 .cta-support-box h2 {
@@ -164,7 +177,7 @@ footer {
 }
 
 /* =========================
-   RESPONSIVE MOBILE
+   RESPONSIVE + MENU BURGER
 ========================= */
 @media (max-width: 900px) {
 
@@ -174,18 +187,27 @@ footer {
     gap: 12px;
   }
 
-  .logo {
-    font-size: 20px;
+  .burger {
+    display: block;
   }
 
   .nav {
-    justify-content: center;
+    display: none;
+    width: 100%;
+    flex-direction: column;
     gap: 8px;
+    background: linear-gradient(180deg, #050b08, #0b1a14);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .nav.show {
+    display: flex;
   }
 
   .nav a {
-    font-size: 13px;
-    padding: 7px 10px;
+    padding: 12px;
+    font-size: 15px;
   }
 
   .hero {
@@ -206,15 +228,6 @@ footer {
     margin: 40px 15px;
   }
 
-  .section h2 {
-    font-size: 22px;
-  }
-
-  .section p,
-  .section li {
-    font-size: 15px;
-  }
-
   .cta-support {
     padding: 40px 15px;
   }
@@ -227,50 +240,11 @@ footer {
   .cta-btn {
     width: 100%;
     text-align: center;
-    padding: 14px;
-    font-size: 15px;
   }
 
   footer {
     font-size: 13px;
     padding: 20px;
-  }
-   /* =========================
-   MENU BURGER
-========================= */
-
-.burger {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-  color: #38e09f;
-  user-select: none;
-}
-
-/* MOBILE */
-@media (max-width: 900px) {
-
-  .burger {
-    display: block;
-  }
-
-  .nav {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    margin-top: 10px;
-    background: linear-gradient(180deg, #050b08, #0b1a14);
-    border-radius: 10px;
-    padding: 10px;
-  }
-
-  .nav a {
-    padding: 12px;
-    border-radius: 6px;
-  }
-
-  .nav.show {
-    display: flex;
   }
 }
 
