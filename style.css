@@ -1,144 +1,54 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ===========================
+   FIX MOBILE AFFICHAGE
+   =========================== */
 
-body {
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #0f1a16, #050707);
-  color: #e6fff5;
-}
-
-/* HEADER */
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: linear-gradient(180deg, #060d0b, #040606);
-  border-bottom: 1px solid rgba(0,255,170,0.15);
-}
-
-.header-inner {
-  max-width: 1200px;
-  margin: auto;
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* LOGO */
-.logo {
-  font-size: 18px;
-  font-weight: bold;
-  color: #00ffaa;
-}
-
-/* NAV DESKTOP */
-.nav {
-  display: flex;
-  gap: 22px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #d9fff1;
-  font-weight: 500;
-  transition: 0.2s;
-}
-
-.nav a:hover {
-  color: #00ffaa;
-}
-
-/* BURGER */
-.burger {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: #00ffaa;
-}
-
-/* MOBILE */
 @media (max-width: 768px) {
 
+  /* Cacher menu desktop */
+  .nav {
+    display: none;
+  }
+
+  /* Afficher burger */
   .burger {
     display: block;
   }
 
-  .nav {
+  /* Menu mobile plein écran */
+  .nav.active {
+    display: flex;
     position: fixed;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100vh;
+    inset: 0;
     background: #050707;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 28px;
-    transition: right 0.3s ease;
-  }
-
-  .nav.active {
-    right: 0;
+    gap: 26px;
+    z-index: 2000;
   }
 
   .nav a {
-    font-size: 20px;
+    font-size: 22px;
   }
-}
 
-/* SECTIONS / CARDS */
-.section {
-  max-width: 900px;
-  margin: 80px auto;
-  padding: 30px;
-  background: rgba(255,255,255,0.02);
-  border-radius: 14px;
-  border: 1px solid rgba(0,255,170,0.15);
-  box-shadow: 0 0 40px rgba(0,255,170,0.08);
-}
+  /* HERO plus léger */
+  .hero h1,
+  .hero h2 {
+    font-size: 26px;
+    text-align: center;
+    padding: 0 16px;
+  }
 
-.section h2 {
-  color: #00ffaa;
-  margin-bottom: 15px;
-}
+  .hero p {
+    font-size: 15px;
+    text-align: center;
+    padding: 0 18px;
+  }
 
-.section p {
-  line-height: 1.6;
-  color: #d7fef0;
-}
-
-/* CALL TO ACTION */
-.cta {
-  margin: 80px auto;
-  max-width: 900px;
-  padding: 35px;
-  border-radius: 16px;
-  background: linear-gradient(145deg, #0c1f18, #07110d);
-  border: 1px solid rgba(0,255,170,0.25);
-  text-align: center;
-}
-
-.cta h3 {
-  color: #00ffaa;
-  margin-bottom: 12px;
-}
-
-.cta a {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 14px 28px;
-  background: #00ffaa;
-  color: #02100c;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.cta a:hover {
-  background: #00e699;
+  /* Sections plus aérées */
+  .section,
+  .cta {
+    margin: 50px 14px;
+    padding: 22px;
+  }
 }
