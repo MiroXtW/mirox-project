@@ -1,6 +1,6 @@
-/* ================================
+/* =========================
    RESET & BASE
-================================ */
+========================= */
 * {
   margin: 0;
   padding: 0;
@@ -8,197 +8,196 @@
 }
 
 body {
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  background: radial-gradient(circle at top, #0f1a16 0%, #050807 60%);
-  color: #d7e0dc;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: radial-gradient(circle at top, #0f1a15 0%, #050707 70%);
+  color: #e6e6e6;
   line-height: 1.6;
 }
 
-.container {
-  max-width: 1150px;
-  margin: 0 auto;
-  padding: 40px 20px;
+/* =========================
+   LIENS
+========================= */
+a {
+  color: #38e09f;
+  text-decoration: none;
 }
 
-/* ================================
+a:hover {
+  color: #6fffc4;
+}
+
+/* =========================
    HEADER / MENU
-================================ */
+========================= */
 .header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: linear-gradient(
-    180deg,
-    #070a09 0%,
-    #0c1512 100%
-  );
-  border-bottom: 1px solid rgba(0, 255, 174, 0.18);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(180deg, #020403 0%, #0a1411 100%);
+  border-bottom: 1px solid rgba(56, 224, 159, 0.2);
 }
 
 .header-bar {
   max-width: 1300px;
-  margin: 0 auto;
-  padding: 18px 24px;
+  margin: auto;
+  padding: 14px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.brand .logo {
-  font-size: 26px;
+.logo {
+  font-size: 22px;
   font-weight: 700;
+  color: #38e09f;
   letter-spacing: 1px;
-  color: #00ffae;
 }
 
-.brand .subtitle {
+.subtitle {
   font-size: 13px;
-  color: #9fbdb2;
-  margin-top: 2px;
+  color: #9fbdb0;
 }
 
-/* ================================
-   NAVIGATION
-================================ */
+/* MENU NAV */
 .nav {
   display: flex;
-  gap: 12px;
+  gap: 18px;
 }
 
 .nav a {
-  position: relative;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  color: #cfd6d2;
   padding: 8px 14px;
   border-radius: 6px;
-  transition: all 0.25s ease;
+  font-weight: 500;
+  color: #dfeee7;
+  transition: all 0.2s ease;
 }
 
-/* Hover */
 .nav a:hover {
-  color: #00ffae;
-  background: rgba(0, 255, 174, 0.08);
+  background: rgba(56, 224, 159, 0.12);
+  color: #38e09f;
 }
 
-/* Page active */
 .nav a.active {
-  color: #00ffae;
-  background: rgba(0, 255, 174, 0.18);
-  box-shadow:
-    0 0 0 1px rgba(0, 255, 174, 0.45),
-    0 0 18px rgba(0, 255, 174, 0.25);
+  background: rgba(56, 224, 159, 0.25);
+  color: #38e09f;
+  box-shadow: 0 0 8px rgba(56, 224, 159, 0.4);
 }
 
-/* Petit underline animé */
-.nav a::after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background: #00ffae;
-  transition: all 0.25s ease;
-  transform: translateX(-50%);
+/* =========================
+   HERO
+========================= */
+.hero {
+  text-align: center;
+  padding: 90px 20px 70px;
 }
 
-.nav a:hover::after,
-.nav a.active::after {
-  width: 60%;
+.hero h2 {
+  font-size: 34px;
+  margin-bottom: 16px;
 }
 
-/* ================================
-   CARTES / BLOCS
-================================ */
+.hero p {
+  font-size: 17px;
+  color: #bcd9cc;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* =========================
+   CARDS
+========================= */
 .card {
-  background: linear-gradient(
-    180deg,
-    rgba(20, 32, 27, 0.75),
-    rgba(10, 18, 15, 0.9)
-  );
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 14px;
-  padding: 30px;
+  padding: 26px;
   margin-bottom: 30px;
-  border: 1px solid rgba(0, 255, 174, 0.12);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
 .card h2 {
-  font-size: 26px;
+  color: #38e09f;
   margin-bottom: 14px;
-  color: #ffffff;
 }
 
 .card p {
-  color: #cfd6d2;
-  margin-bottom: 14px;
-}
-
-.card ul {
-  padding-left: 20px;
-}
-
-.card ul li {
+  color: #d0e6dc;
   margin-bottom: 10px;
 }
 
-/* Highlight */
+.card ul {
+  margin-left: 20px;
+}
+
+.card li {
+  margin-bottom: 8px;
+}
+
+/* CARD HIGHLIGHT */
 .card.highlight {
-  border: 1px solid rgba(0, 255, 174, 0.35);
+  border: 1px solid rgba(56, 224, 159, 0.35);
   background: linear-gradient(
     180deg,
-    rgba(0, 255, 174, 0.15),
-    rgba(15, 30, 25, 0.95)
+    rgba(56, 224, 159, 0.08),
+    rgba(0, 0, 0, 0.4)
   );
 }
 
-/* ================================
-   BOUTONS / CTA
-================================ */
+/* =========================
+   CTA BUTTON
+========================= */
 .cta {
   display: inline-block;
-  margin-top: 20px;
-  padding: 14px 22px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #00ffae, #00c88a);
-  color: #02110c;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 0 25px rgba(0, 255, 174, 0.45);
-  transition: all 0.25s ease;
+  margin-top: 16px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #38e09f, #2bbd83);
+  color: #05100c;
+  font-weight: 600;
+  transition: all 0.2s ease;
 }
 
 .cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 35px rgba(0, 255, 174, 0.65);
+  box-shadow: 0 8px 20px rgba(56, 224, 159, 0.5);
 }
 
-/* ================================
+/* =========================
    FOOTER
-================================ */
+========================= */
 .footer {
   text-align: center;
   padding: 30px 15px;
-  color: #9fbdb2;
-  font-size: 14px;
-  border-top: 1px solid rgba(0, 255, 174, 0.15);
-  background: #070a09;
+  font-size: 13px;
+  color: #8faea1;
+  border-top: 1px solid rgba(56, 224, 159, 0.15);
+  margin-top: 60px;
 }
 
-/* ================================
+/* =========================
    RESPONSIVE
-================================ */
+========================= */
 @media (max-width: 900px) {
   .header-bar {
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
   }
 
   .nav {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .hero h2 {
+    font-size: 26px;
   }
 }
