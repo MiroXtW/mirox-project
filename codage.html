@@ -2,214 +2,52 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Codage DayZ & Développement – MIROX PROJECT</title>
+  <title>Codage – MIROX PROJECT</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Codage DayZ professionnel : mission files, systèmes personnalisés, optimisation serveur, scripts, outils admin et bonnes pratiques.">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="header-inner">
-
+<header class="hero" style="height:50vh;">
+  <nav class="navbar">
     <div class="logo">MIROX PROJECT</div>
-
-    <div class="burger" id="burger">☰</div>
-
-    <nav class="nav" id="nav">
-      <a href="index.html">Accueil</a>
-      <a href="services.html">Services</a>
-      <a href="mapping.html">Mapping</a>
-      <a href="codage.html" class="active">Codage</a>
-      <a href="discord.html">Discord</a>
-      <a href="erreurs.html">Erreurs</a>
-      <a href="support.html">Support</a>
-    </nav>
-
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </nav>
+  <div class="hero-content">
+    <h1>Codage & Scripts DayZ</h1>
+    <p>Fonctionnalités avancées et personnalisées</p>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Codage & Développement DayZ</h1>
-  <p>
-    Des systèmes propres, optimisés et maintenables<br>
-    pour des serveurs stables et évolutifs.
-  </p>
-</section>
+<section class="services">
+  <div class="service">
+    <i class="fa-solid fa-code"></i>
+    <h3>Scripts sur mesure</h3>
+    <p>Gameplay custom, systèmes uniques, automatisation.</p>
+  </div>
 
-<!-- INTRO -->
-<section class="section">
-  <h2>Le codage : le cœur invisible de votre serveur</h2>
+  <div class="service">
+    <i class="fa-solid fa-bug-slash"></i>
+    <h3>Correction de bugs</h3>
+    <p>Détection et résolution d’erreurs critiques.</p>
+  </div>
 
-  <p>
-    Un serveur DayZ peut avoir un bon mapping,
-    mais sans un codage propre et maîtrisé,
-    il devient rapidement instable, compliqué à maintenir
-    et frustrant pour les joueurs comme pour le staff.
-  </p>
-
-  <p>
-    <strong>MIROX PROJECT</strong> intervient directement
-    sur les éléments critiques du serveur pour garantir
-    performance, stabilité et évolutivité.
-  </p>
-</section>
-
-<!-- MISSION FILES -->
-<section class="section">
-  <h2>Mission files & structure serveur</h2>
-
-  <p>
-    Nous travaillons directement sur la structure du serveur :
-  </p>
-
-  <ul>
-    <li><strong>mpmission</strong> (fichiers mission)</li>
-    <li>Configuration economy (types, events, cfgeventspawns)</li>
-    <li>Gestion loot & équilibrage</li>
-    <li>Initialisation serveur propre</li>
-    <li>Nettoyage des conflits inutiles</li>
-  </ul>
-
-  <p>
-    Objectif : une base saine, compréhensible
-    et facile à maintenir dans le temps.
-  </p>
-</section>
-
-<!-- SYSTEMES -->
-<section class="section">
-  <h2>Systèmes personnalisés</h2>
-
-  <p>
-    Chaque serveur a ses propres règles et mécaniques.
-    Nous développons ou adaptons des systèmes spécifiques :
-  </p>
-
-  <ul>
-    <li>Systèmes de missions</li>
-    <li>Systèmes économiques</li>
-    <li>Zones à règles spécifiques</li>
-    <li>Événements automatisés</li>
-    <li>Systèmes PvP / PvE avancés</li>
-  </ul>
-
-  <p>
-    Tous les systèmes sont pensés pour être
-    <strong>lisibles, modulables et évolutifs</strong>.
-  </p>
-</section>
-
-<!-- OPTIMISATION -->
-<section class="section">
-  <h2>Optimisation & performance</h2>
-
-  <p>
-    Les problèmes de performance viennent rarement d’un seul point.
-    Nous analysons l’ensemble du serveur :
-  </p>
-
-  <ul>
-    <li>Scripts lourds ou mal optimisés</li>
-    <li>Surcharges inutiles</li>
-    <li>Erreurs silencieuses dans les logs</li>
-    <li>Conflits entre systèmes</li>
-  </ul>
-
-  <p>
-    Le but n’est pas seulement de “faire fonctionner”,
-    mais d’assurer une <strong>stabilité long terme</strong>.
-  </p>
-</section>
-
-<!-- OUTILS -->
-<section class="section">
-  <h2>Outils & environnement de travail</h2>
-
-  <p>
-    Nous utilisons et recommandons des outils adaptés
-    au développement et à l’administration DayZ :
-  </p>
-
-  <ul>
-    <li><strong>Notepad++</strong> (édition et structuration)</li>
-    <li>Gestion FTP / fichiers serveur</li>
-    <li>Analyse des logs serveur</li>
-    <li>Organisation propre des dossiers</li>
-  </ul>
-
-  <p>
-    Si besoin, nous vous expliquons les bases
-    pour que vous soyez autonome sur votre serveur.
-  </p>
-</section>
-
-<!-- BONNES PRATIQUES -->
-<section class="section">
-  <h2>Bonnes pratiques serveur</h2>
-
-  <ul>
-    <li>Éviter les systèmes “usine à gaz”</li>
-    <li>Documenter les modifications importantes</li>
-    <li>Limiter les dépendances inutiles</li>
-    <li>Préparer le serveur aux mises à jour DayZ</li>
-    <li>Faciliter la maintenance staff</li>
-  </ul>
-
-  <p>
-    Un bon serveur est un serveur que l’on peut
-    maintenir sans tout casser à chaque update.
-  </p>
-</section>
-
-<!-- POUR QUI -->
-<section class="section">
-  <h2>À qui s’adresse ce service ?</h2>
-
-  <ul>
-    <li>Admins voulant un serveur propre et stable</li>
-    <li>Serveurs en difficulté technique</li>
-    <li>Projets en refonte ou en montée en gamme</li>
-    <li>Admins souhaitant comprendre leur serveur</li>
-  </ul>
-</section>
-
-<!-- CTA -->
-<section class="cta-support">
-  <div class="cta-support-box">
-    <h2>Besoin d’une intervention technique ?</h2>
-    <p>
-      Expliquez votre problème ou votre objectif,
-      nous analyserons votre situation et proposerons
-      une solution adaptée.
-    </p>
-    <a href="support.html" class="cta-btn">Ouvrir un ticket Codage</a>
+  <div class="service">
+    <i class="fa-solid fa-rocket"></i>
+    <h3>Optimisation</h3>
+    <p>Performance, stabilité et sécurité serveur.</p>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  © 2025 – MIROX PROJECT
+  <p>© 2025 – MIROX PROJECT</p>
 </footer>
-
-<!-- JS BURGER -->
-<script>
-  const burger = document.getElementById("burger");
-  const nav = document.getElementById("nav");
-
-  burger.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-
-  document.querySelectorAll(".nav a").forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("active");
-    });
-  });
-</script>
 
 </body>
 </html>
