@@ -2,248 +2,52 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Discord Professionnel – MIROX PROJECT</title>
+  <title>Discord – MIROX PROJECT</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Création Discord professionnel pour DayZ : structure, rôles, bots, killfeed, automatisations, sécurité, anti-abus et expérience communauté.">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="header-inner">
-
+<header class="hero" style="height:50vh;">
+  <nav class="navbar">
     <div class="logo">MIROX PROJECT</div>
-
-    <div class="burger" id="burger">☰</div>
-
-    <nav class="nav" id="nav">
-      <a href="index.html">Accueil</a>
-      <a href="services.html">Services</a>
-      <a href="mapping.html">Mapping</a>
-      <a href="codage.html">Codage</a>
-      <a href="discord.html" class="active">Discord</a>
-      <a href="erreurs.html">Erreurs</a>
-      <a href="support.html">Support</a>
-    </nav>
-
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </nav>
+  <div class="hero-content">
+    <h1>Discord Professionnel</h1>
+    <p>Organisation, bots et automatisation</p>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Discord Professionnel</h1>
-  <p>
-    Une communauté structurée, sécurisée et automatisée<br>
-    pour un serveur DayZ crédible et durable.
-  </p>
-</section>
+<section class="services">
+  <div class="service">
+    <i class="fa-brands fa-discord"></i>
+    <h3>Serveur structuré</h3>
+    <p>Rôles, permissions, salons organisés.</p>
+  </div>
 
-<!-- INTRO -->
-<section class="section">
-  <h2>Votre Discord : vitrine + staff tool</h2>
+  <div class="service">
+    <i class="fa-solid fa-robot"></i>
+    <h3>Bots & automatisation</h3>
+    <p>Logs, tickets, modération, commandes.</p>
+  </div>
 
-  <p>
-    Un Discord DayZ n’est pas juste un “tchat”.
-    C’est votre <strong>vitrine</strong>, votre <strong>centre de support</strong>,
-    votre <strong>outil staff</strong> et l’endroit où votre communauté
-    décide de rester… ou de partir.
-  </p>
-
-  <p>
-    <strong>MIROX PROJECT</strong> construit des Discord
-    <strong>clairs, efficaces et évolutifs</strong>,
-    pensés pour l’expérience joueur et la gestion staff.
-  </p>
-</section>
-
-<!-- STRUCTURE -->
-<section class="section">
-  <h2>Structure Discord (claire et pro)</h2>
-
-  <p>
-    Nous créons une structure lisible, logique et propre,
-    avec une séparation claire entre :
-  </p>
-
-  <ul>
-    <li>Informations / règlements / annonces</li>
-    <li>Onboarding (arrivée joueur)</li>
-    <li>Support / tickets</li>
-    <li>Salons communauté</li>
-    <li>Salons staff</li>
-    <li>Logs / sécurité (privé)</li>
-  </ul>
-
-  <p>
-    Le but : un Discord qui reste compréhensible même
-    quand la communauté grandit.
-  </p>
-</section>
-
-<!-- ROLES -->
-<section class="section">
-  <h2>Rôles & permissions (staff vraiment sécurisé)</h2>
-
-  <p>
-    Le plus gros problème des Discord DayZ : les permissions mal gérées.
-    Résultat : fuites, abus, chaos staff, erreurs humaines.
-  </p>
-
-  <p>
-    Nous mettons en place une hiérarchie claire :
-  </p>
-
-  <ul>
-    <li><strong>Owner / Fondateur</strong> : contrôle total</li>
-    <li><strong>Admin</strong> : gestion serveurs / sanctions / configs</li>
-    <li><strong>Modérateur</strong> : support joueur + modération</li>
-    <li><strong>Staff Technique</strong> : accès logs / outils / bots</li>
-    <li><strong>VIP / Donateur</strong> : avantages visibles (optionnel)</li>
-    <li><strong>Joueur</strong> : accès standard</li>
-  </ul>
-
-  <p>
-    Chaque rôle est configuré pour minimiser les risques :
-    <strong>pas d’accès inutile</strong>, pas de “permission en trop”.
-  </p>
-</section>
-
-<!-- BOTS -->
-<section class="section">
-  <h2>Bots & outils indispensables</h2>
-
-  <p>
-    Un Discord premium repose sur des outils fiables :
-    modération, tickets, logs, automatisations, annonces.
-  </p>
-
-  <ul>
-    <li><strong>Tickets</strong> : support structuré (catégories, priorités)</li>
-    <li><strong>Anti-abus</strong> : anti-spam, anti-raid, anti-link</li>
-    <li><strong>Logs</strong> : actions staff, suppressions, bans, permissions</li>
-    <li><strong>Rôles auto</strong> : onboarding, règles, validation</li>
-    <li><strong>Annonces</strong> : patchnotes, maintenance, events</li>
-  </ul>
-
-  <p>
-    Nous configurons les bots selon votre façon de gérer :
-    minimaliste, medium, ou très automatisé.
-  </p>
-</section>
-
-<!-- KILLFEED -->
-<section class="section">
-  <h2>Killfeed DayZ & intégrations</h2>
-
-  <p>
-    Si vous utilisez un killfeed ou des systèmes connectés au serveur,
-    nous organisons l’intégration Discord de façon propre :
-  </p>
-
-  <ul>
-    <li>Salons killfeed séparés (global / PvP / PvE)</li>
-    <li>Logs véhicules / explosions / events (selon setup)</li>
-    <li>Organisation pour éviter le spam</li>
-    <li>Lisibilité et filtres (si possible selon votre système)</li>
-  </ul>
-
-  <p>
-    Objectif : garder les infos utiles sans transformer le Discord
-    en mur de spam illisible.
-  </p>
-</section>
-
-<!-- SECURITE -->
-<section class="section">
-  <h2>Sécurité & anti-raid (priorité)</h2>
-
-  <p>
-    Un Discord DayZ attire souvent des attaques : raids, spam, bots.
-    Nous mettons en place une sécurité réaliste :
-  </p>
-
-  <ul>
-    <li>Restrictions onboarding (nouveaux membres)</li>
-    <li>Protection anti-liens / anti-invites</li>
-    <li>Rôles de validation</li>
-    <li>Permissions optimisées (catégories verrouillées)</li>
-    <li>Logs complets en privé</li>
-  </ul>
-
-  <p>
-    Résultat : votre staff respire, votre serveur reste clean.
-  </p>
-</section>
-
-<!-- EXPERIENCE -->
-<section class="section">
-  <h2>Expérience joueur (onboarding & clarté)</h2>
-
-  <p>
-    Un joueur doit comprendre votre serveur en 30 secondes :
-    règles, comment rejoindre, où demander de l’aide,
-    où trouver les infos.
-  </p>
-
-  <ul>
-    <li>Salon “Bienvenue” + règles</li>
-    <li>Salons infos serveur (IP, mods, whitelist, guides)</li>
-    <li>FAQ rapide</li>
-    <li>Accès support clair</li>
-  </ul>
-
-  <p>
-    Un bon onboarding réduit les tickets inutiles
-    et améliore la rétention.
-  </p>
-</section>
-
-<!-- POUR QUI -->
-<section class="section">
-  <h2>À qui s’adresse ce service ?</h2>
-
-  <ul>
-    <li>Serveurs DayZ voulant un Discord pro (pas un Discord “bordel”)</li>
-    <li>Admins qui veulent un staff organisé</li>
-    <li>Communautés qui visent la stabilité et la croissance</li>
-    <li>Projets qui veulent automatiser et sécuriser</li>
-  </ul>
-</section>
-
-<!-- CTA -->
-<section class="cta-support">
-  <div class="cta-support-box">
-    <h2>Créer / améliorer votre Discord ?</h2>
-    <p>
-      Expliquez votre projet (type de serveur, staff, besoins, outils),
-      et nous vous proposerons une structure claire et adaptée.
-    </p>
-    <a href="support.html" class="cta-btn">Ouvrir un ticket Discord</a>
+  <div class="service">
+    <i class="fa-solid fa-shield-halved"></i>
+    <h3>Sécurité</h3>
+    <p>Protection contre spam et abus.</p>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  © 2025 – MIROX PROJECT
+  <p>© 2025 – MIROX PROJECT</p>
 </footer>
-
-<!-- JS BURGER -->
-<script>
-  const burger = document.getElementById("burger");
-  const nav = document.getElementById("nav");
-
-  burger.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-
-  document.querySelectorAll(".nav a").forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("active");
-    });
-  });
-</script>
 
 </body>
 </html>
