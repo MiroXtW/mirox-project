@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://miroxtw.github.io/mirox-project/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://miroxtw.github.io/mirox-project/services.html</loc>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://miroxtw.github.io/mirox-project/mapping.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://miroxtw.github.io/mirox-project/codage.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://miroxtw.github.io/mirox-project/erreurs.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://miroxtw.github.io/mirox-project/discord.html</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://miroxtw.github.io/mirox-project/marketing.html</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://miroxtw.github.io/mirox-project/formation.html</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://miroxtw.github.io/mirox-project/faq.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://miroxtw.github.io/mirox-project/support.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>
