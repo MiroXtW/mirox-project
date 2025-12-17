@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://miroxtw.github.io/mirox-project/sitemap.xml
