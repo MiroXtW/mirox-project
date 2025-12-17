@@ -2,246 +2,80 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Erreurs DayZ & Dépannage – MIROX PROJECT</title>
+  <title>Erreurs & Fix – MIROX PROJECT</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Erreurs courantes DayZ : logs serveur, erreurs vanilla, crashs, RTP, conflits mods et dépannage admin.">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="header-inner">
-
+<header class="hero" style="height:50vh;">
+  <nav class="navbar">
     <div class="logo">MIROX PROJECT</div>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </nav>
 
-    <div class="burger" id="burger">☰</div>
-
-    <nav class="nav" id="nav">
-      <a href="index.html">Accueil</a>
-      <a href="services.html">Services</a>
-      <a href="mapping.html">Mapping</a>
-      <a href="codage.html">Codage</a>
-      <a href="discord.html">Discord</a>
-      <a href="erreurs.html" class="active">Erreurs</a>
-      <a href="support.html">Support</a>
-    </nav>
-
+  <div class="hero-content">
+    <h1>Erreurs & Corrections</h1>
+    <p>Diagnostic et résolution des problèmes DayZ</p>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Erreurs courantes DayZ</h1>
-  <p>
-    Comprendre, identifier et corriger les problèmes serveur<br>
-    avant qu’ils n’impactent votre communauté.
-  </p>
-</section>
+<section class="services">
 
-<!-- INTRO -->
-<section class="section">
-  <h2>Pourquoi ces erreurs reviennent toujours ?</h2>
-
-  <p>
-    La majorité des serveurs DayZ rencontrent les mêmes problèmes :
-    erreurs vanilla mal comprises, conflits de configuration,
-    logs ignorés ou solutions temporaires.
-  </p>
-
-  <p>
-    Cette page a pour but de vous aider à :
-  </p>
-
-  <ul>
-    <li>identifier rapidement l’origine d’une erreur</li>
-    <li>éviter les fausses solutions</li>
-    <li>savoir quand intervenir… ou quand demander de l’aide</li>
-  </ul>
-</section>
-
-<!-- RTP -->
-<section class="section">
-  <h2>❌ Erreurs RTP (Return To Position)</h2>
-
-  <p><strong>Exemples fréquents :</strong></p>
-
-  <pre>
-RTP: Cannot place object
-RTP error while loading object
-Object skipped due to collision
-  </pre>
-
-  <p><strong>Causes probables :</strong></p>
-  <ul>
-    <li>Objets placés sous le terrain</li>
-    <li>Collisions trop importantes</li>
-    <li>Mapping non optimisé ou mal converti</li>
-    <li>Empilement excessif d’objets</li>
-  </ul>
-
-  <p><strong>Bonnes pratiques :</strong></p>
-  <ul>
-    <li>Tester chaque zone individuellement</li>
-    <li>Éviter les stacks d’objets inutiles</li>
-    <li>Contrôler les collisions avant export</li>
-  </ul>
-</section>
-
-<!-- CRASH -->
-<section class="section">
-  <h2>💥 Crash serveur au démarrage</h2>
-
-  <p><strong>Exemples :</strong></p>
-
-  <pre>
-Server terminated unexpectedly
-Init error in mission file
-Cannot load world
-  </pre>
-
-  <p><strong>Causes probables :</strong></p>
-  <ul>
-    <li>Erreur dans mpmission</li>
-    <li>Fichier mal encodé (UTF-8 / BOM)</li>
-    <li>Mod manquant ou mal chargé</li>
-    <li>Conflit de version</li>
-  </ul>
-
-  <p><strong>Actions recommandées :</strong></p>
-  <ul>
-    <li>Lire les logs AVANT le crash</li>
-    <li>Désactiver les mods un par un</li>
-    <li>Vérifier la structure des dossiers</li>
-  </ul>
-</section>
-
-<!-- CONFIG -->
-<section class="section">
-  <h2>⚙️ Problèmes de configuration vanilla</h2>
-
-  <p><strong>Exemples :</strong></p>
-
-  <pre>
-Item not spawned
-Event skipped
-Economy initialization failed
-  </pre>
-
-  <p><strong>Sources courantes :</strong></p>
-  <ul>
-    <li>types.xml mal configuré</li>
-    <li>cfgeventspawns incorrect</li>
-    <li>Valeurs min / max incohérentes</li>
-    <li>Duplication d’ID</li>
-  </ul>
-
-  <p><strong>Conseils :</strong></p>
-  <ul>
-    <li>Modifier progressivement</li>
-    <li>Tester chaque changement</li>
-    <li>Éviter les configs “copiées-collées”</li>
-  </ul>
-</section>
-
-<!-- MODS -->
-<section class="section">
-  <h2>🔧 Conflits de mods</h2>
-
-  <p><strong>Symptômes :</strong></p>
-  <ul>
-    <li>Objets invisibles</li>
-    <li>Crash aléatoires</li>
-    <li>Fonctions non exécutées</li>
-  </ul>
-
-  <p><strong>Causes :</strong></p>
-  <ul>
-    <li>Deux mods modifiant la même fonction</li>
-    <li>Dépendances manquantes</li>
-    <li>Ordre de chargement incorrect</li>
-  </ul>
-
-  <p><strong>Approche pro :</strong></p>
-  <ul>
-    <li>Lire les descriptions des mods</li>
-    <li>Limiter le nombre de mods inutiles</li>
-    <li>Tester en environnement réduit</li>
-  </ul>
-</section>
-
-<!-- LOGS -->
-<section class="section">
-  <h2>📄 Logs serveur ignorés (erreur classique)</h2>
-
-  <p>
-    Beaucoup d’admins cherchent des solutions
-    sans lire les logs correctement.
-  </p>
-
-  <p><strong>Règles simples :</strong></p>
-  <ul>
-    <li>Les erreurs importantes sont AVANT le crash</li>
-    <li>La dernière ligne n’est pas toujours la cause</li>
-    <li>Une erreur répétée est rarement anodine</li>
-  </ul>
-
-  <p>
-    Apprendre à lire les logs vous fait gagner
-    des heures de dépannage.
-  </p>
-</section>
-
-<!-- AVANT TICKET -->
-<section class="section">
-  <h2>Avant d’ouvrir un ticket support</h2>
-
-  <ul>
-    <li>Avez-vous les logs complets ?</li>
-    <li>L’erreur est-elle reproductible ?</li>
-    <li>Quels mods sont installés ?</li>
-    <li>Qu’avez-vous modifié récemment ?</li>
-  </ul>
-
-  <p>
-    Plus votre demande est claire,
-    plus la résolution sera rapide.
-  </p>
-</section>
-
-<!-- CTA -->
-<section class="cta-support">
-  <div class="cta-support-box">
-    <h2>Un problème persiste ?</h2>
+  <div class="service">
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    <h3>Crash serveur</h3>
     <p>
-      Si malgré ces vérifications l’erreur continue,
-      notre support technique peut intervenir.
+      Analyse des logs, détection des conflits de mods,
+      résolution des crashs répétés.
     </p>
-    <a href="support.html" class="cta-btn">Contacter le support</a>
   </div>
+
+  <div class="service">
+    <i class="fa-solid fa-file-lines"></i>
+    <h3>Erreurs logs</h3>
+    <p>
+      Lecture et interprétation complète des fichiers logs
+      pour identifier l’origine du problème.
+    </p>
+  </div>
+
+  <div class="service">
+    <i class="fa-solid fa-plug-circle-xmark"></i>
+    <h3>Conflits de mods</h3>
+    <p>
+      Correction des incompatibilités, ordre de chargement,
+      optimisation de la liste de mods.
+    </p>
+  </div>
+
+  <div class="service">
+    <i class="fa-solid fa-gauge-high"></i>
+    <h3>Problèmes de performance</h3>
+    <p>
+      Lag serveur, désynchronisation, surcharge CPU/RAM,
+      optimisation globale.
+    </p>
+  </div>
+
 </section>
 
-<!-- FOOTER -->
+<section class="cta">
+  <h2>Un problème bloque ton serveur ?</h2>
+  <p>Ne perds plus de temps, je m’en occupe.</p>
+  <a href="support.html" class="btn-primary">Demander une assistance</a>
+</section>
+
 <footer>
-  © 2025 – MIROX PROJECT
+  <p>© 2025 – MIROX PROJECT</p>
 </footer>
-
-<!-- JS BURGER -->
-<script>
-  const burger = document.getElementById("burger");
-  const nav = document.getElementById("nav");
-
-  burger.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-
-  document.querySelectorAll(".nav a").forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("active");
-    });
-  });
-</script>
 
 </body>
 </html>
